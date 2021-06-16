@@ -1,0 +1,49 @@
+GET http://localhost:8000/api/products HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/products HTTP/1.1
+content-type:application/json
+
+{
+    "title": "Code Brain Baster",
+    "price": 50.00,
+    "description": "Injects code into your brain"
+}
+
+
+###
+
+GET http://localhost:8000/api/products HTTP/1.1
+
+
+###
+
+// Post another product
+
+POST http://localhost:8000/api/products HTTP/1.1
+content-type:application/json
+
+{
+    "title": "Cat Commnicator",
+    "price": 5000,
+    "description": "Talk to your cat with this device"
+}
+
+###
+
+PUT http://localhost:8000/api/products/60594a055a215f3840d8ee88
+content-type:application/json
+
+{
+    "title": "Cat Walkie Talkie",
+    "price": 500.00,
+    "description": "Breaker Breaker this is kitty"
+}
+
+###
+
+DELETE http://localhost:8000/api/products/605a4bb774984d1a1486e340 HTTP/1.1
+
+
+// FUCK YEAH THEY ALL WORK
